@@ -1,0 +1,54 @@
+
+/* Universal Settings */
+html{
+
+  color: gray;
+}
+
+.navbar, .intro, .start-info, .main-image{
+  border: 2px solid black;
+}
+
+/*navbar*/
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  height:
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 32px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+
+}
+.menu ul li{
+  margin-left: 16px;
+}
+/*IntroBanner*/
+.intro{
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+.start-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-image-intro{
+  width: 60%;
+  background-image: url("resources/images/banner.jpg");
+  background-size: 100%
+  margin: 32px 24px;
+}
