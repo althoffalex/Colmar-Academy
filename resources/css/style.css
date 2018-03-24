@@ -5,7 +5,7 @@ html{
   color: gray;
 }
 
-.navbar, .intro, .start-info, .main-image{
+.navbar, .intro, .start-info, .main-image, .about-left, .about-right, .right-infopoint{
   border: 2px solid black;
 }
 
@@ -42,13 +42,90 @@ html{
 }
 .start-info{
   display: flex;
+  width: 40%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.main-image-intro{
+h1{
+  font-size: 54px;
+  font-weight: bold;
+}
+.main-image{
+  width:60%;
+  padding: 32px 24px;
+}
+.main-image img{
+  width:100%;
+  height:100%;
+}
+/*About Banner*/
+.about{
+  display: flex;
+  background-color: beige;
+}
+.about-left{
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  background-image: url("resources/images/banner.jpg");
-  background-size: 100%
-  margin: 32px 24px;
+  padding: 32px 24px;
+}
+.about-right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 16px;
+
+}
+.about-left img{
+  width:100%;
+  height: auto;
+}
+.about-left h1{
+  margin: 32px auto;
+}
+.right-infopoint{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+}
+.infopoint-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  margin-left: 16px;
+}
+.right-img{
+  width: 35%;
+
+}
+.right-img img{
+  width: 100%;
+  height: auto;
+}
+/* Classes Section */
+.courses{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: lightgrey;
+}
+.course-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 72px;
+}
+.course-description{
+  background-color: white;
+}
+.course{
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.course-heading{
+  padding-top: 32px;
 }
