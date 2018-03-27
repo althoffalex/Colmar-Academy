@@ -1,8 +1,18 @@
 
 /* Universal Settings */
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html{
 
+
   color: gray;
+}
+h3{
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .navbar, .intro, .start-info, .main-image, .about-left, .about-right, .right-infopoint{
@@ -105,6 +115,10 @@ h1{
   width: 100%;
   height: auto;
 }
+#grey-info{
+  background-color: grey;
+  color: white;
+}
 /* Classes Section */
 .courses{
 display: flex;
@@ -128,4 +142,43 @@ background-color: lightgrey;
 }
 .course-heading{
   padding-top: 32px;
+}
+/*Thesis Sections */
+.thesis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thesis-content{
+  display: flex;
+
+}
+.thesis-left{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.thesis-about{
+  width: 40%;
+}
+.thesis video{
+  width: 100%;
+  height: auto;
+}
+.thesis-about{
+  display: flex;
+  flex-direction: column;
+}
+.thesis-about-img img{
+  width: 100% ;
+  height: auto;
+}
+.thesis-about-block{
+  display: flex;
+}
+.block-text{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
 }
