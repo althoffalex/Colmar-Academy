@@ -44,6 +44,21 @@ h3{
 .menu ul li{
   margin-left: 16px;
 }
+.mobile-navbar{
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+ .mobile-navbar{
+ display: flex;
+ justify-content: space-around;
+ height: 64px;
+   }
+ .navbar{
+ display: none;
+ }
+}
+
 /*IntroBanner*/
 .intro{
   display: flex;
@@ -58,7 +73,7 @@ h3{
   align-items: flex-start;
 }
 h1{
-  font-size: 54px;
+  font-size: 32px;
   font-weight: bold;
 }
 .main-image{
@@ -69,6 +84,13 @@ h1{
   width:100%;
   height:100%;
 }
+
+@media only screen and (max-width: 700px){
+
+}
+
+
+
 /*About Banner*/
 .about{
   display: flex;
@@ -109,16 +131,40 @@ h1{
 }
 .right-img{
   width: 35%;
-
 }
 .right-img img{
   width: 100%;
   height: auto;
 }
+.mobile-right-img{
+  display: none;
+}
 #grey-info{
   background-color: grey;
   color: white;
 }
+@media only screen and (max-width: 700px){
+  .about-left{
+    display: none;
+  }
+  .right-img{
+    display: none;
+  }
+  .mobile-right-img{
+    display:inline-flex;
+  }
+  .right-infopoint{
+    display: flex;
+    flex-direction: column;
+    width: 100%;}
+
+    .about-right{
+      width: 100%;
+    }
+}
+
+
+
 /* Classes Section */
 .courses{
 display: flex;
@@ -143,7 +189,28 @@ background-color: lightgrey;
 .course-heading{
   padding-top: 32px;
 }
+@media only screen and (max-width: 700px){
+  .course img, .course-description span, .course-description p{
+    display: none;
+  }
+  .course-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .course-description{
+    background-color: lightgrey;
+  }
+  .courses{
+    background-color: white;
+  }
+
+}
+
+
+
 /*Thesis Sections */
+
 .thesis{
   display: flex;
   flex-direction: column;
@@ -181,4 +248,12 @@ background-color: lightgrey;
   display: flex;
   flex-direction: column;
   width: 65%;
+}
+@media only screen and (max-width: 700px){
+  .thesis-about, .thesis-left h1, .thesis-left p{
+    display: none;
+  }
+  .thesis-left{
+    width: 100%;
+  }
 }
